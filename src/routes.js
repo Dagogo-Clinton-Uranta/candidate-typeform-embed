@@ -52,7 +52,7 @@ export default function Router() {
    
     //SOLUTIONS
    
-    { path: 'call-center-solutions', element: <CallCenterSolutionsPage /> },
+    { path: 'home', element: <CallCenterSolutionsPage /> },
     { path: 'loan-inquiry', element: <LoanInquiryPage /> },
     { path: 'loan-refund', element: <LoanRefundPage /> },
     { path: 'loan-reminder', element: <LoanReminderPage /> },
@@ -92,7 +92,7 @@ export default function Router() {
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/call-center-solutions" />, index: true },
+        { element: <Navigate to="/home" />, index: true },
         {/* element: <Navigate to="/dashboard/home" />, index: true */},
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },

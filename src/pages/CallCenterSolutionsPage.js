@@ -26,39 +26,28 @@ import ShortDescOne from 'src/page-components/componentsCallCenterSolutions/shor
 import ExpectationsLong from 'src/page-components/componentsCallCenterSolutions/expectationsLong/ExpectationsLong'
 import Callingcard from 'src/page-components/componentsCallCenterSolutions/callingcard/Callingcard'
 import CallingcardTwo from 'src/page-components/componentsCallCenterSolutions/callingcardtwo/Callingcardtwo'
+import { useEffect } from 'react'
 
 
 const CallCenterSolutionsPage = () => {
  
-    return (
-        <div className="welcomePage">
-       
-        {/*<Nav/>*/}
-        {/*<Header />*/}
-        
-         <ShortDescOne/>
-      {/* <Expectations/>
-        <ShortDescTwo/>
-       
-        
-        
-        <Callingcard/>
-        <FeaturesAlternate/>
-        <CallingcardTwo/> */}
-        
-       
-        {/*<About />*/}
-        {/*<Experience />*/}
-        {/*<ExpectationsLong />*/}
-       {/* <Testimonials/>
-        <CallToAction/>
-        <ClientTestimonials/>
-        <Faq/> */}
+  useEffect(() => {
+    // Load the Typeform embed script dynamically when the component mounts
+    const script = document.createElement('script');
+    script.src = "//embed.typeform.com/next/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-        {/*<Projects/>*/}
-        <Footer/>
-        </div>
-      )
-}
+    // Cleanup the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <div data-tf-live="01J868JVWA9W34HGXX49ZTVFJ7"></div>
+  );
+};
+
 
 export default CallCenterSolutionsPage
