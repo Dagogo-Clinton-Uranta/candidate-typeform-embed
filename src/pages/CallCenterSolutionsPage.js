@@ -1,0 +1,64 @@
+
+import Header from '../page-components/componentsCallCenterSolutions/header/Header'
+
+
+import Experience from '../page-components/componentsCallCenterSolutions/experience/Experience'
+
+
+import About from '../page-components/componentsCallCenterSolutions/about/About'
+import CallToAction from '../page-components/componentsCallCenterSolutions/calltoaction/CallToAction'
+/*import RangeTable from '../componentsCallCenterSolutions/rangeTable/RangeTable'*/
+import Choice from '../page-components/componentsCallCenterSolutions/choice/Choice'
+/*import Solutions from '../componentsCallCenterSolutions/solutions/Solutions'*/
+import Testimonials from '../page-components/componentsCallCenterSolutions/testimonials/Testimonials'
+
+
+/*import Projects from '../componentsCallCenterSolutions/projects/Projects'*/
+import Faq from '../page-components/componentsCallCenterSolutions/Faq/Faq'
+import Footer from 'src/general-components/footer/Footer'
+import Expectations from 'src/page-components/componentsCallCenterSolutions/expectations/Expectations'
+import ClientTestimonials from 'src/page-components/componentsCallCenterSolutions/client-testimonials/ClientTestimonials'
+import Benefits from '../page-components/componentsCallCenterSolutions/benefits/Benefits'
+import FeaturesAlternate from 'src/page-components/componentsCallCenterSolutions/featuresAlternate/FeaturesAlternate'
+//import Features from 'src/page-components/componentsFaxingSolutions/features/Features'
+import ShortDescTwo from 'src/page-components/componentsCallCenterSolutions/shortdesctwo/ShortDescTwo'
+import ShortDescOne from 'src/page-components/componentsCallCenterSolutions/shortdescone/ShortDescOne'
+import ExpectationsLong from 'src/page-components/componentsCallCenterSolutions/expectationsLong/ExpectationsLong'
+import Callingcard from 'src/page-components/componentsCallCenterSolutions/callingcard/Callingcard'
+import CallingcardTwo from 'src/page-components/componentsCallCenterSolutions/callingcardtwo/Callingcardtwo'
+
+
+const CallCenterSolutionsPage = () => {
+ 
+    return (
+        <div className="welcomePage">
+       
+        {/*<Nav/>*/}
+        {/*<Header />*/}
+        
+         <ShortDescOne/>
+      {/* <Expectations/>
+        <ShortDescTwo/>
+       
+        
+        
+        <Callingcard/>
+        <FeaturesAlternate/>
+        <CallingcardTwo/> */}
+        
+       
+        {/*<About />*/}
+        {/*<Experience />*/}
+        {/*<ExpectationsLong />*/}
+       {/* <Testimonials/>
+        <CallToAction/>
+        <ClientTestimonials/>
+        <Faq/> */}
+
+        {/*<Projects/>*/}
+        <Footer/>
+        </div>
+      )
+}
+
+export default CallCenterSolutionsPage
