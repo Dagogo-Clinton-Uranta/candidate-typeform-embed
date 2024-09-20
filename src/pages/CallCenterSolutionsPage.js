@@ -45,7 +45,12 @@ const CallCenterSolutionsPage = () => {
   }, []);
 
   return (
-    <div data-tf-live="01J868JVWA9W34HGXX49ZTVFJ7"></div>
+   
+     <div style={{/*margin:"0 auto"*/display:"flex",justifyContent:"center",alignItems:"center"}}>
+      <div className={'white-block'}></div>
+      <div style={{position:"relative",top:"2.5rem",width:"100%",scale:"1"}} data-tf-live="01J881YHNZ46YSH2GX23HJQJGD"></div>
+  
+    </div>
   );
 };
 
